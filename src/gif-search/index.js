@@ -44,7 +44,7 @@ class Giphy extends React.Component {
   getTrending = async () => {
     const API_KEY = `67gUppgnCJILpG2Nh4Xb1N70Xf6uXthJ&q`;
     const response = await fetch(
-      `http://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=25`
+      `http://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=100`
     ).then((response) => response.json());
     this.setState({
       trending: response.data,
