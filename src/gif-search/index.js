@@ -14,7 +14,7 @@ import {
   TrendingContent,
   SearchBox,
   Content,
-  TrendGifsBox
+  TrendGifsBox,
 } from "./styled";
 
 class Giphy extends React.Component {
@@ -25,6 +25,7 @@ class Giphy extends React.Component {
       gifs: [],
       gifsContent: [],
       trending: [],
+      random: [],
     };
     this.getTrending();
   }
@@ -69,10 +70,10 @@ class Giphy extends React.Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 7,
-      slidesToScroll: 7,
+      slidesToShow: "5",
+      slidesToScroll: 4,
     };
-    const { searchGiphy, gifs, trending } = this.state;
+    const { searchGiphy, gifs, trending, random } = this.state;
     return (
       <Container>
         <LogoContainer>
