@@ -41,18 +41,21 @@ export const TrendingTitle = styled.h3`
   display: flex;
   color: #fff;
 `;
-export const TrendGifsBox = styled.div`
-	display: flex;
-`;
 export const TrendingContent = styled.div`
   display: block;
   box-sizing: border-box;
-  width: 1040px;
+  width: 100%;
 	margin-bottom: 25px;
+`;
+export const TrendGifsBox = styled.div`
+	display: flex;
+	width: 100%;
+	overflow: hidden;
   img {
-    display: block;
-    width: 150px;
-    height: 150px;
+    display: inline-block;
+    margin-left: 6px;
+    height: 200px;
+		
   }
 `;
 export const Gif = styled.div`
